@@ -1,0 +1,9 @@
+services:
+  test-script:
+    build:
+      context: ./
+    image: vigilant-minerim-test
+    environment:
+    - INPUT_AGE_IN_DAYS_TO_BE_MOVED=-1
+    - INPUT_ORIGIN_PATH=/data/files/*/*
+    - INPUT_DESTINATION_PATH=/tmp/moved
